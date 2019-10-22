@@ -3,28 +3,13 @@ import * as _ from 'lodash'
 
 import AttributeData from '../_data/stats/attribute-data'
 
-const BuildAttributes = (range) => {
-  let attributes = [...AttributeData]
-  let scores = _.shuffle(range)
+const getAttributes = (template) => {
+  let attributes = _.shuffle([...template.attributes]).map((score, i) => ({
+    ...AttributeData[i],
+    score: score
+  }))
 
-  return attributes.map((data, i) => (
-    {...data, score: scores[i]}
-  ))
+  return { ...template, attributes: attributes }
 }
 
-const Attributes = ({ range }) => {
-  let attributeRange = BuildAttributes(range)
-  console.log(attributeRange)
-
-  return (
-    <div>
-      {attributeRange.map(attribute => (
-        <span>
-          {attribute.name} <b>{attribute.score}</b>
-        </span>
-      ))}
-    </div>
-  )
-}
-
-export default Attributes
+export default getAttributes

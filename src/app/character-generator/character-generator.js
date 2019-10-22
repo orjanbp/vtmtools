@@ -26,11 +26,9 @@ const CharacterGenerator = () => {
     <div id="chargen">
       <MortalForm callback={generateCharacter} />
       <div id="output">
-        <ul>
           {output.map(item => (
-            <li>{item}</li>
+            <div>{item}</div>
           ))}
-        </ul>
       </div>
     </div>
   )

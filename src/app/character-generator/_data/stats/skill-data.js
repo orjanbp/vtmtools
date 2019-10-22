@@ -32,7 +32,7 @@ const SkillData = [
     group: 'Social'
   },
   {
-    name: 'Finane',
+    name: 'Finance',
     group: 'Mental'
   },
   {
