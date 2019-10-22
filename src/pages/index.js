@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../_includes/layout'
 import SEO from '../_includes/seo'
 
-import CharacterGenerator from '../app/chargen/chargen'
-import CharacterGeneratorStore from '../_stores/chargen-store'
+import CharacterGenerator from '../app/character-generator/character-generator'
+import CharacterGeneratorStore from '../_stores/character-generator-store'
 
 const IndexPage = () => (
   <Layout>
