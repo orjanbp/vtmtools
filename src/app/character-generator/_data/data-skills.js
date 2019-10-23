@@ -1,4 +1,4 @@
-const SkillData = [
+const DataSkills = [
   {
     name: 'Academics',
     group: 'Mental'
@@ -109,4 +109,4 @@ const SkillData = [
   },
 ]
 
-export default SkillData
+export default DataSkills

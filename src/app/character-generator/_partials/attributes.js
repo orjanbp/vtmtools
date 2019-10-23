@@ -1,11 +1,11 @@
 import React from 'react'
 import * as _ from 'lodash'
 
-import AttributeData from '../_data/stats/attribute-data'
+import DataAttributes from '../_data/data-attributes'
 
 const getAttributes = (template) => {
   let attributes = _.shuffle([...template.attributes]).map((score, i) => ({
-    ...AttributeData[i],
+    ...DataAttributes[i],
     score: score
   }))
 

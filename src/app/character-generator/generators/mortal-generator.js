@@ -1,7 +1,7 @@
 import React from 'react'
 import * as _ from 'lodash'
 
-import MortalTypes from '../_data/presets/mortal-types'
+import MortalTypes from '../_data/mortal-types'
 
 import getCoreTraits from '../_partials/core-traits'
 

@@ -1,4 +1,4 @@
-const AttributeData = [
+const DataAttributes = [
   {
     name: 'Strength',
     group: 'Physical'
@@ -37,4 +37,4 @@ const AttributeData = [
   }
 ]
 
-export default AttributeData
+export default DataAttributes

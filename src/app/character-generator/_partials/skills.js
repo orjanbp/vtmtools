@@ -1,6 +1,6 @@
 import * as _ from 'lodash'
 
-import SkillData from '../_data/stats/skill-data'
+import DataSkills from '../_data/data-skills'
 
 const findPrimaryAttributes = (attributes) => {
   return _(attributes)
@@ -26,7 +26,7 @@ const groupByPriority = (skills, cutoff) => {
 }
 
 const skillsByPriority = (skills, attributes) => {
-  let allSkills = _.shuffle(SkillData)
+  let allSkills = _.shuffle(DataSkills)
   let populatedSkills = []
   let primaryAttributes = findPrimaryAttributes(attributes)
   let priorityCutoff = findPriorityCutoff(attributes)

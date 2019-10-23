@@ -1,7 +1,7 @@
 import React from 'react'
 import useForm from 'react-hook-form'
 
-import MortalTypes from '../_data/presets/mortal-types'
+import MortalTypes from '../_data/mortal-types'
 
 const MortalForm = ({ callback }) => {
   const { register, handleSubmit, watch, errors } = useForm()
